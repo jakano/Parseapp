@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Parse
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +17,37 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        //Override point for customization after application launch.
+        Parse.initializeWithConfiguration(
+            ParseClientConfiguration(block: { (configuration:ParseMutableClientConfiguration) -> Void in
+                configuration.applicationId = "prstagram"
+                configuration.clientKey = "2cool4you"  // set to nil assuming you have not set clientKey
+                configuration.server = "https://prstagram.herokuapp.com/parse"
+            })
+            
+        )
+        if PFUser.currentUser() != nil {
+            let mainStoryboardIpad : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let initialViewControlleripad : UITabBarController = mainStoryboardIpad.instantiateViewControllerWithIdentifier("tabBar") as! UITabBarController
+            self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+            self.window?.rootViewController = initialViewControlleripad
+            self.window?.makeKeyAndVisible()
+             
+        }
+        
+        /*let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let liveFeedNavigationController = storyboard.instantiateViewControllerWithIdentifier("FeedViewController") as! UINavigationController
+        let liveFeedViewController = liveFeedNavigationController.topViewController as! FeedViewController
+        
+        
+        let uploadNavigationController = storyboard.instantiateViewControllerWithIdentifier("UploadViewController") as! UINavigationController
+        let uploadViewController = liveFeedNavigationController.topViewController as! UploadViewController
+        
+        let tabBarController = UITabBarController()
+        tabBarController.viewControllers = [liveFeedNavigationController, uploadNavigationController]
+        window?.makeKeyAndVisible()*/
+        
         return true
     }
 
@@ -40,6 +72,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
 
 
 }
