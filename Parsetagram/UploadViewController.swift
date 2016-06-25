@@ -62,6 +62,7 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
         post["caption"] = caption
         post["likesCount"] = 0
         post["commentsCount"] = 0
+        post["creationTime"] = NSDate()
         
         // Save object (following function will save the object in Parse asynchronously)
         post.saveInBackgroundWithBlock(completion)
@@ -92,6 +93,7 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
             self.activityIndicator.stopAnimating()
             if success == true {
                 self.tabBarController?.selectedIndex = 2
+                self.captionField.text = ""
             } else {
                 print("There was an error: \(error?.localizedDescription)")
             }

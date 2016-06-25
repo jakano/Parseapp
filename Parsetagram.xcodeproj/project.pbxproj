@@ -19,6 +19,7 @@
 		ED43CC6A1D189A96000F7931 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED43CC691D189A96000F7931 /* LoginViewController.swift */; };
 		ED6CE4751D1C7D2D005BC5AF /* InfiniteScrollActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6CE4741D1C7D2D005BC5AF /* InfiniteScrollActivityView.swift */; };
 		ED6CE4781D1C8463005BC5AF /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6CE4771D1C8463005BC5AF /* DetailedViewController.swift */; };
+		ED6CE47A1D1CB82A005BC5AF /* MyPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6CE4791D1CB82A005BC5AF /* MyPostViewController.swift */; };
 		EDAB742C1D1855CF00081C56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB742B1D1855CF00081C56 /* AppDelegate.swift */; };
 		EDAB742E1D1855CF00081C56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB742D1D1855CF00081C56 /* ViewController.swift */; };
 		EDAB74311D1855CF00081C56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDAB742F1D1855CF00081C56 /* Main.storyboard */; };
@@ -60,9 +61,11 @@
 		ED02B9081D19E67B0095170A /* PrstagramViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrstagramViewCell.swift; sourceTree = "<group>"; };
 		ED02B90A1D19F1430095170A /* UploadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		ED02B90C1D19FC0B0095170A /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		ED2072BD1D1DFF2000B4A3D9 /* brinkmann.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = brinkmann.ttf; sourceTree = "<group>"; };
 		ED43CC691D189A96000F7931 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		ED6CE4741D1C7D2D005BC5AF /* InfiniteScrollActivityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfiniteScrollActivityView.swift; sourceTree = "<group>"; };
 		ED6CE4771D1C8463005BC5AF /* DetailedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
+		ED6CE4791D1CB82A005BC5AF /* MyPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPostViewController.swift; sourceTree = "<group>"; };
 		EDAB74281D1855CF00081C56 /* Parsetagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Parsetagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDAB742B1D1855CF00081C56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDAB742D1D1855CF00081C56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +130,7 @@
 		ED02B8FF1D19E2FA0095170A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				ED6CE4791D1CB82A005BC5AF /* MyPostViewController.swift */,
 				ED6CE4771D1C8463005BC5AF /* DetailedViewController.swift */,
 				ED02B9041D19E3E20095170A /* FeedViewController.swift */,
 				ED43CC691D189A96000F7931 /* LoginViewController.swift */,
@@ -151,6 +155,14 @@
 				ED02B9081D19E67B0095170A /* PrstagramViewCell.swift */,
 			);
 			name = Cell;
+			sourceTree = "<group>";
+		};
+		ED2072BC1D1DFF0800B4A3D9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				ED2072BD1D1DFF2000B4A3D9 /* brinkmann.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 		ED6CE4761D1C7D3E005BC5AF /* ActivityViews */ = {
@@ -186,6 +198,7 @@
 		EDAB742A1D1855CF00081C56 /* Parsetagram */ = {
 			isa = PBXGroup;
 			children = (
+				ED2072BC1D1DFF0800B4A3D9 /* Fonts */,
 				ED6CE4761D1C7D3E005BC5AF /* ActivityViews */,
 				ED02B9011D19E32E0095170A /* Cell */,
 				ED02B9001D19E3220095170A /* Table */,
@@ -499,6 +512,7 @@
 				ED43CC6A1D189A96000F7931 /* LoginViewController.swift in Sources */,
 				ED02B90D1D19FC0B0095170A /* UserViewController.swift in Sources */,
 				ED6CE4781D1C8463005BC5AF /* DetailedViewController.swift in Sources */,
+				ED6CE47A1D1CB82A005BC5AF /* MyPostViewController.swift in Sources */,
 				ED02B90B1D19F1430095170A /* UploadViewController.swift in Sources */,
 				ED02B9071D19E4610095170A /* FeedTableView.swift in Sources */,
 				ED02B8F91D19DE570095170A /* GramCell.swift in Sources */,

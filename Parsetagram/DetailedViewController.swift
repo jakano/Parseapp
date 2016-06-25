@@ -20,6 +20,13 @@ class DetailedViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let caption = post!["caption"] as! String
+        let createdAt = post!["creationTime"] as! NSDate
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateStyle = .ShortStyle
+
+        //dateFormatter.dateFormat = "yyyy-MM-dd hh:mm:ss"
+        let timeStamp = dateFormatter.stringFromDate(createdAt)
+        self.detailTimeStampLabel.text = timeStamp
         self.detailPictureView.file = post!["media"] as? PFFile
         self.detailPictureView.loadInBackground()
         self.detailCaptionLabel.text = caption
