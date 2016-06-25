@@ -44,7 +44,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://youtu.be/FmufykSpe5U' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+[YoutTube] (https://youtu.be/FmufykSpe5U) - The Video
 
 Shared via YouTube
 
